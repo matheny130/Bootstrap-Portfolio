@@ -2,50 +2,83 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>About Me | Mike Matheny</title>
-        <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+            crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css" media="screen">
     </head>
     <body>
-        <header id="masthead">
-            <div class="container">
-                <a href="index.html" id="logo">Mike Matheny</a>
-                <nav>
-                    <a href="index.html">About</a>
-                    <a href="portfolio.html">Portfolio</a>
-                    <a href="contact.html">Contact</a>
-                </nav>
+         <nav class="navbar navbar-default">
+            <div class="container-fluid navbar-custom">
+                <div class="row">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                            aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <div class="col-xs-12 phone-nav">
+                            <a class="navbar-brand" href="index.html" id="logo">Mike Matheny</a>
+                        </div>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right navbar-right-custom">
+                            <li>
+                                <a href="contact.html">Contact</a>
+                            </li>
+                            <li>
+                                <a href="portfolio.html">Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="index.html">About</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-        </header>
+        </nav>
+        <div class="wrap">
+            <div class="container">
+                <section class="row">
+                    <div class="col-md-8">
+                        <article class="about-me-content">
+                            <h1 class="about-me-header">About Me</h1>
+                            <hr class="about-me-hr" />
+                            <img src="assets/images/redrocks.jpg" alt="" id="auth-image" />
+                            <p>Life-long seeker of knowledge and Sociology graduate who currently has his sights set on a full-time project management position. Experienced in HTML5, CSS3, Javascript, JQuery, Bootstrap, Angular JS, Firebase, Ionic Mobile Framework, Node Js, MySQL,
+                            MongoDB, Express, and Handlebars JS. Additionally, experienced in management, sales, and customer service.</p>
+                            <br>
+                            <p>Feel free to browse around and checkout some of the applications I've created; or had a hand in creating. Of course, if you have any questions please use the contact me form to get in touch with me or, if you prefer, use one of the sites linked on the side.</p>
+                        </article>
+                    </div>
+                    <div class="col-md-4">
 
-            <div id="main-container" class="container">
-                <section class="main-section">
-                    <h1>About Me</h1>
-
-                    <img src="assets/images/redrocks.png" class="auth-image" alt="Mike Matheny">
-
-                    <p>Marshmallow jelly souffl&eacute; pastry biscuit gummi bears tootsie roll tootsie roll gingerbread. Cotton candy muffin gingerbread fruitcake. Sweet roll souffl&eacute; topping wafer croissant oat cake gummi&nbsp;bears.</p>
-
-                    <p>Jelly-o cheesecake dessert fruitcake ice cream brownie liquorice souffl&eacute;. Caramels biscuit gummi bears tiramisu chupa chups. Croissant macaroon cotton candy cake pudding.</p>
-
-                </section>
-
-                <section class="sidebar">
-                    <div id="connect">
-                        <h2>Connect With Me</h2>
-
-                        <a href="#"><img src="assets/images/github-128.png" class="social" alt="GitHub" /></a>
-                        <a href="#"><img src="assets/images/linkedin-128.png" class="social" alt="LinkedIn" /></a>
-                        <a href="#"><img src="assets/images/stackoverflow-128.png" class="social" alt="Stack Overflow" /></a>
+                        <section id="connect-with-me-area">
+                            <div class="connect-with-me-content">
+                                <h1 class="connect-with-me-header">Connect With Me</h1>
+                                <hr />
+                                <div id="images">
+                                    <img src="assets/images/github-128.png" alt="" class="connect-with-me-photo">
+                                    <img src="assets/images/linkedin-128.png" alt="" class="connect-with-me-photo">
+                                    <img src="assets/images/stackoverflow-128.png" alt="" class="connect-with-me-photo">
+                                </div>
+                            </div>
+                        </section>
                     </div>
                 </section>
             </div>
+        </div>
 
-            <footer>
-                <div class="container">
-                    Copyright &copy; 2018 Mike Matheny
-                </div>
-            </footer>
+        <footer class="footer">
+            <div class="two-toned-footer-color"></div>
+            <p class="text-muted text-muted-footer text-center">
+                &copy; Copyright 2018 Mike Matheny
+            </p>
+        </footer>
 
     </body>
 </html>
