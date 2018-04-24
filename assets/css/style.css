@@ -63,9 +63,9 @@ html {
 #auth-image {
   float: left;
   width: 200px;
-  height: 200px;
-  margin-top: 20px;
-  margin-right: 20px;
+  height: auto;
+  margin-top: 10px;
+  margin-right: 25px;
 }
 
 #connect-with-me-area {
