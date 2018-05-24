@@ -188,6 +188,9 @@ margin-bottom: 30px;
 .work {
   display: inline-block
 }
+a {
+  color: #388d35
+}
 
 @media only screen and (max-width: 767px) {
   .navbar-header {
