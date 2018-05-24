@@ -180,6 +180,9 @@ margin-bottom: 30px;
   width: 206px;
   height: 106px;
   margin-bottom: 15px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #bbc;
 }
 
 .work {
