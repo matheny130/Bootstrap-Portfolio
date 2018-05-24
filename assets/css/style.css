@@ -9,6 +9,9 @@ html {
   min-height: 100%;
 }
 
+#navbar-link {
+  color: #388d35;
+}
 .navbar-custom {
   background-color: #fff;
 }
