@@ -9,6 +9,9 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
           crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase.js"></script>
     </head>
     <body>
         <nav class="navbar navbar-default">
@@ -55,7 +58,7 @@
                     <br />
                     <textarea id="msg" name="user_message_input" cols=600></textarea>
                   </div>
-                  <button class="submit-btn">Submit</button>
+                  <button class="submit-btn" id="submit">Submit</button>
                 </form>
               </div>
               <div class="col-md-4">
@@ -81,6 +84,49 @@
                   &copy; Copyright 2018 Mike Matheny
                 </p>
               </footer>
+
+          <script>
+            // Initialize Firebase
+            var config = {
+              apiKey: "AIzaSyDW9ZXfXbiOqaYVecKgTFf3eLkoUX6kl6A",
+              authDomain: "portfolio-contact-page-ff05a.firebaseapp.com",
+              databaseURL: "https://portfolio-contact-page-ff05a.firebaseio.com",
+              projectId: "portfolio-contact-page-ff05a",
+              storageBucket: "portfolio-contact-page-ff05a.appspot.com",
+              messagingSenderId: "516125979700"
+            };
+            firebase.initializeApp(config);
+
+
+
+            var database = firebase.database();
+
+              $("#submit").on("click", function (event) {
+                event.preventDefault();
+
+                var contactName = $("#name_input").val().trim();
+                var contactEmail = $("#mail_input").val().trim();
+                var contactMessage = $("#msg").val().trim();
+
+                var newContact = {
+                  name: contactName,
+                  email: contactEmail,
+                  message: contactMessage
+                };
+
+                database.ref().push(newContact);
+
+                console.log(newContact.name);
+                console.log(newContact.email);
+                console.log(newContact.message);
+
+                $("#name_input").val("");
+                $("#mail_input").val("");
+                $("#msg").val("");
+
+              });
+
+          </script>
     </body>
 
 </html>
