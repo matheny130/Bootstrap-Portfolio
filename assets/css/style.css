@@ -1,7 +1,12 @@
 body {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   margin-bottom: 150px;
-  background: url("../images/concrete_seamless.png");
+  background: url("../images/blue-background.jpg");
+}
+body.index {
+  background: url("../images/index-background.png") no-repeat center fixed;
+  background-size: cover;
+
 }
 
 html {
@@ -9,51 +14,87 @@ html {
   min-height: 100%;
 }
 
-#navbar-link {
-  color: #388d35;
-}
-.navbar-custom {
-  background-color: #fff;
+h1 {
+  font-size: 80px;
 }
 
+#name-plate {
+  margin: auto;
+  width: 50%;
+  margin-top: 175px;
+  padding: 10px;
+  text-align: center;
+  font-family: 'Prata', serif;
+  color: whitesmoke;
+}
+h2 {
+  font-size: 25px;
+  text-shadow: 1px 1px black;
+}
+
+
+#byline {
+  margin: auto;
+  width: 50%;
+  margin-top: 30px;
+  padding: 10px;
+  text-align: center;
+  font-family: 'Marck Script', cursive;
+  color: rgb(9, 41, 224);
+}
+
+#navbar-link {
+  color: #fff;
+}
+.navbar-custom {
+  background-color: black;
+}
+
+strong {
+  color: black;
+}
 #logo {
   height: 60px;
   padding-top: 20px;
   padding-bottom: 5px;
-  margin-left: 70px;
-  font-family: Georgia, Times, "Times New Roman", serif;
+
+  font-family: 'Playfair Display', serif;
   font-size: 24px;
   font-weight: bold;
   color: #fff;
-  background: #388d35;
+  background: black;
+}
+
+.navbar-center-custom {
+
+  padding-left: 400px;
 }
 
 .navbar-right-custom {
-  padding-top: 6px;
+  padding-top: 10px;
   padding-right: 20px;
-  font-family: Arial;
+  font-family: 'Khand', sans-serif;
   font-weight: lighter;
 }
 
 .navbar-nav > li > a:hover {
-  color: #388d35;
+  color: black;
 }
-
-
 
 .about-me-header {
   margin-bottom: 33px;
   font-family: Georgia, Times, "Times New Roman", serif;
   font-size: 32px;
   font-weight: bold;
-  color: #388d35;
+  color:black;
 }
 
 .about-me-content {
   width: 100%;
   padding: 30px;
   margin-top: 32px;
-  background-color: #fff;
+  background: url("../images/concrete_seamless.png");
+  border-radius: 25px;
 }
 
 .about-me-content > p {
@@ -71,24 +112,49 @@ html {
   margin-right: 25px;
 }
 
-#connect-with-me-area {
+#skills-area-index {
   width: 100%;
-  padding: 30px 30px 43px;
-  margin-top: 32px;
-  background-color: #fff;
+  padding: 45px 10px 25px 31px;
+  background-color: rgb(77, 74, 74);
+  margin-left: 50px;
+  border-radius: 25px;
+  color: whitesmoke;
 }
 
-.connect-with-me-header {
+#skills-area-portfolio {
+  width: 100%;
+  padding: 45px 10px 25px 31px;
+  margin-top: 100px;
+  background-color: rgb(77, 74, 74);
+  margin-left: 200px;
+  border-radius: 25px;
+  color: whitesmoke
+}
+
+#skills-area-contact {
+  width: 100%;
+  padding: 45px 10px 25px 31px;
+  margin-top: 100px;
+  background-color: rgb(77, 74, 74);
+  margin-left: 200px;
+  border-radius: 25px;
+  color: whitesmoke
+}
+
+
+
+.skills-header {
   margin-bottom: 15px;
   font-family: Georgia, Times, "Times New Roman", serif;
   font-size: 25px;
   font-weight: bold;
-  color: #388d35;
+  color: whitesmoke;
 }
 
 .connect-with-me-photo {
-  width: 55px;
-  height: 55px;
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
 }
 
 #images {
@@ -104,7 +170,7 @@ html {
   width: 100%;
   height: 60px;
   margin-top: 30px;
-  background-color: #666;
+  background-color: black;
 }
 
 .text-muted-footer {
@@ -115,7 +181,7 @@ html {
 .two-toned-footer-color {
   height: 6px;
   padding-top: 3px;
-  background-color: #388d35;
+  background-color: black;
 }
 
 
@@ -124,7 +190,8 @@ html {
   width: 100%;
   padding: 45px 10px 25px 31px;
   margin-top: 30px;
-  background-color: #fff;
+  background: url("../images/concrete_seamless.png");
+  border-radius: 25px;
 }
 
 .contact-form-header,
@@ -133,7 +200,7 @@ html {
   font-family: Georgia, Times, "Times New Roman", serif;
   font-size: 32px;
   font-weight: bold;
-  color: #388d35;
+  color: black;
 }
 
 #name_input,
@@ -147,14 +214,14 @@ html {
 
 #msg {
   height: 200px;
-  border-color: #bbc;
+ ;
 }
 
 .label-name,
 .label-msg,
 .label-mail {
   font-size: 17px;
-  color: #bbc;
+  color: black;
 }
 
 .contact-hr {
@@ -166,15 +233,16 @@ margin-bottom: 30px;
   font-size: 16px;
   font-weight: lighter;
   color: #fff;
-  background-color: #388d35;
+  background-color: black;
   border: 0;
 }
 
 #portfolio-area {
-  width: 65%;
+
   padding: 10px 10px 25px 31px;
   margin-top: 30px;
-  background-color: #fff;
+  background: url("../images/concrete_seamless.png");
+  border-radius: 25px;
 }
 
 
@@ -185,20 +253,21 @@ margin-bottom: 30px;
   margin-bottom: 15px;
   border-style: solid;
   border-width: 2px;
-  border-color: #bbc;
+  border-color: #fff;
 }
 
 .work {
   display: inline-block
 }
 a {
-  color: #388d35
+  color: rgb(35, 34, 102);
 }
 
 @media only screen and (max-width: 767px) {
   .navbar-header {
-    background-color: #388d35;
+    background-color: black;
   }
+
 
   #logo {
     width: 100%;
@@ -206,12 +275,12 @@ a {
     padding-top: 20px;
     padding-bottom: 5px;
     margin-left: 0;
-    font-family: Georgia, Times, "Times New Roman", serif;
+    font-family: 'Playfair Display', serif;
     font-size: 24px;
     font-weight: bold;
     color: #fff;
     text-align: center;
-    background: #388d35;
+    background: black;
   }
 }
 
