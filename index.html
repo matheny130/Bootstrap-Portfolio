@@ -12,8 +12,8 @@
         <link href="https://fonts.googleapis.com/css?family=Marck+Script|Prata" rel="stylesheet">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     </head>
-    <body class="index">
-        <div id="index">
+    <body>
+        <div class="wrapper">
             <div class="row">
                 <div class="col-md-6-xs-12 phone nav">
                     <div id="name-plate">
@@ -24,6 +24,116 @@
                     </div>
                 </div>
             </div>
+        </div>
+
+        <div class="about" style="display: none">
+            <nav class="navbar navbar-default">
+                <div class="container-fluid navbar-custom">
+                    <div class="row">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                                aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <div class="col-xs-12 phone-nav">
+                                <a class="navbar-brand" href="index.html" id="logo">Mike Matheny</a>
+                            </div>
+                        </div>
+                        <div>
+                            <ul class="nav navbar-nav navbar-center navbar-center-custom">
+                                <li>
+                                    <a href="https://github.com/matheny130">
+                                        <img src="assets/images/github-128.png" alt="" class="connect-with-me-photo">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.linkedin.com/in/mrmatheny/">
+                                        <img src="assets/images/linkedin-128.png" alt="" class="connect-with-me-photo">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://stackoverflow.com/users/9199924/mike-matheny">
+                                        <img src="assets/images/stackoverflow-128.png" alt="" class="connect-with-me-photo">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav navbar-right navbar-right-custom">
+                                <li>
+                                    <a id="navbar-link" href="resume.html">Resume</a>
+                                </li>
+                                <li>
+                                    <a id="navbar-link" href="portfolio.html">Portfolio</a>
+                                </li>
+                                <li>
+                                    <a id="navbar-link" href="about-me.html">About</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="wrap">
+                <div class="container">
+                    <section class="row">
+                        <div class="col-md-8">
+                            <section id="about-me">
+                                <article class="about-me-content">
+                                    <h1 class="about-me-header">About Me</h1>
+                                    <hr class="about-me-hr">
+                                    <img src="assets/images/profile2.jpg" alt="" id="auth-image">
+                                    <p>Life-long seeker of knowledge and Sociology graduate who currently has his sights set on a full-time
+                                        position utilizing my programming skills. Experienced in HTML5, CSS3, Javascript, JQuery, Bootstrap,
+                                        Angular JS, Firebase, Ionic Mobile Framework, Node Js, MySQL, MongoDB, Express, and Handlebars
+                                        JS. Additionally, experienced in management, sales, and customer service.</p>
+                                    <br>
+                                    <p>Feel free to browse around and checkout some of the applications I've created; or had a hand in creating.
+                                        Of course, if you have any questions you can reach me at
+                                        <strong>mike.matheny.81@gmail.com</strong>, use the contact me form to get in touch with me, or use one
+                                        of the sites linked by the icons in the navbar.</p>
+                                </article>
+                            </section>
+                        </div>
+                        <div class="col-md-4">
+                            <section id="skills-area-index">
+                                <div class="skills-content">
+                                    <h1 class="skills-header">Skills</h1>
+                                    <hr />
+                                    <div id="skills">
+                                        <ul>
+                                            <li>HTML5</li>
+                                            <li>CSS3</li>
+                                            <li>Javascript</li>
+                                            <li>JQuery</li>
+                                            <li>Bootstrap</li>
+                                            <li>Angular JS</li>
+                                            <li>Firebase</li>
+                                            <li>Ionic Mobile Framework</li>
+                                            <li>Node Js</li>
+                                            <li>MySQL</li>
+                                            <li>MongoDB</li>
+                                            <li>Express</li>
+                                            <li>Handlebars JS</li>
+                                            <li>React JS</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <footer class="footer">
+                <div class="two-toned-footer-color"></div>
+                <p class="text-muted text-muted-footer text-center">
+                    &copy; Copyright 2018 Mike Matheny
+                </p>
+            </footer>
 
         </div>
         <a href="about-me.html" class="transition"></a>
@@ -31,10 +141,12 @@
 </html>
 <script type="text/javascript">
     $(document).ready(function () {
-        $("html").fadeOut(7000, redirectPage);
-            function redirectPage() {
-            window.location = "about-me.html";
-        }
+
+        $(".wrapper").fadeOut(7000)
+        $(".about").delay(7001).fadeIn(750);
+        //$(".wrapper").hide();
+        //$(".container").fadeIn(7100);
+
     });
 </script>
 
