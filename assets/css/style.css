@@ -82,7 +82,7 @@ strong {
 
 .wrap {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-  padding-bottom: 100px;
+  padding-bottom: 170px;
   background: url("../images/blue-background.jpg");
 }
 
@@ -119,6 +119,13 @@ strong {
 #auth-image {
   float: left;
   width: 200px;
+  height: auto;
+  margin-top: 10px;
+  margin-right: 25px;
+}
+#program-image {
+  float: left;
+  width: 350px;
   height: auto;
   margin-top: 10px;
   margin-right: 25px;
