@@ -23,6 +23,7 @@ h1 {
   color: whitesmoke;
   text-shadow: 4px 4px black;
 }
+
 h2 {
   font-size: 20px;
   text-shadow: 1px 1px black;
@@ -47,30 +48,40 @@ h2 {
 }
 .navbar-custom {
   background-color: black;
+  overflow: hidden;
 }
 
 strong {
   color: black;
 }
 #logo {
-  height: 60px;
-  padding-top: 20px;
   padding-bottom: 5px;
-
+  margin-left: 10px;
   font-family: 'Playfair Display', serif;
   font-size: 24px;
   font-weight: bold;
   color: #fff;
   background: black;
+  margin-bottom: -50px;
 }
 
-.navbar-center-custom {
+#icons {
+  padding-top: 10px;
+  text-align: center;
+  margin-bottom: -50px;
+  vertical-align: middle;
+}
 
-  padding-left: 400px;
+#icon {
+  display: inline-block;
+  text-align: center;
+}
+
+#links {
+  float: right;
 }
 
 .navbar-right-custom {
-  padding-top: 10px;
   padding-right: 20px;
   font-family: 'Khand', sans-serif;
   font-weight: lighter;
@@ -84,6 +95,7 @@ strong {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   padding-bottom: 170px;
   background: url("../images/blue-background.jpg");
+  margin: auto;
 }
 
 
@@ -267,16 +279,31 @@ margin-bottom: 30px;
   border: 0;
 }
 
+.container {
+  height: 100%;
+  margin: auto;
+}
+
 #portfolio-area {
 
   padding: 10px 10px 25px 31px;
   margin-top: 30px;
+  margin-bottom: 70px;
   background: url("../images/concrete_seamless.png");
   border-radius: 25px;
 }
 
+#projects {
+ height: 100%;
+}
 
+#projects-quiz {
+  padding-bottom: 85px;
+}
 
+#projects-bands {
+  padding-bottom: 55px;
+}
 .port-imgs {
   width: 206px;
   height: 106px;
@@ -301,8 +328,7 @@ a {
 
   #logo {
     width: 100%;
-    height: 60px;
-    padding-top: 20px;
+
     padding-bottom: 5px;
     margin-left: 0;
     font-family: 'Playfair Display', serif;
