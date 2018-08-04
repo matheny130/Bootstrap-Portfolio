@@ -23,9 +23,11 @@ h1 {
   color: whitesmoke;
   text-shadow: 4px 4px black;
 }
+
 h2 {
   font-size: 20px;
   text-shadow: 1px 1px black;
+  display: inline-block;
 }
 
 .navbar {
@@ -47,30 +49,49 @@ h2 {
 }
 .navbar-custom {
   background-color: black;
+  overflow: hidden;
 }
 
 strong {
   color: black;
 }
 #logo {
-  height: 60px;
-  padding-top: 20px;
   padding-bottom: 5px;
-
+  margin-left: 10px;
   font-family: 'Playfair Display', serif;
   font-size: 24px;
   font-weight: bold;
   color: #fff;
   background: black;
+
 }
 
-.navbar-center-custom {
+#icons {
+  padding-top: 10px;
+  text-align: center;
+  margin-bottom: -25px;
+  padding-right: 150px;
+}
 
-  padding-left: 400px;
+#icon {
+  display: inline-block;
+  text-align: center;
+}
+
+#links {
+  float: right;
+  padding-right: 20px;
+  font-family: 'Khand', sans-serif;
+  font-weight: lighter;
+}
+
+#link {
+  display: inline-block;
+  text-align: center;
+  padding: 2px;
 }
 
 .navbar-right-custom {
-  padding-top: 10px;
   padding-right: 20px;
   font-family: 'Khand', sans-serif;
   font-weight: lighter;
@@ -116,6 +137,11 @@ strong {
   color: #666;
 }
 
+.container {
+  height: 100%;
+  padding-bottom: 50px;
+}
+
 #auth-image {
   float: left;
   width: 200px;
@@ -132,7 +158,7 @@ strong {
 }
 
 #skills-area-index {
-  width: 100%;
+  width: 66%;
   padding: 45px 10px 25px 31px;
   background-color: rgb(77, 74, 74);
   margin-left: 50px;
@@ -142,7 +168,7 @@ strong {
 }
 
 #skills-area-portfolio {
-  width: 100%;
+  width: 75%;
   padding: 45px 10px 25px 31px;
   margin-top: 100px;
   background-color: rgb(77, 74, 74);
@@ -294,23 +320,70 @@ a {
 }
 
 @media only screen and (max-width: 767px) {
+
+  h1 {
+  font-size: 50px;
+  }
+
+  h2 {
+  font-size: 20px;
+  text-shadow: 1px 1px black;
+  display: inline-block;
+  }
+
+  #name-plate {
+  margin: auto;
+  width: 50%;
+  margin-right: 200px;
+  text-align: center;
+  font-family: 'Prata', serif;
+  color: whitesmoke;
+  text-shadow: 4px 4px black;
+  }
+
   .navbar-header {
     background-color: black;
   }
 
-
   #logo {
-    width: 100%;
-    height: 60px;
-    padding-top: 20px;
-    padding-bottom: 5px;
-    margin-left: 0;
+
+    padding-left: 125px;
     font-family: 'Playfair Display', serif;
     font-size: 24px;
     font-weight: bold;
     color: #fff;
-    text-align: center;
     background: black;
   }
+
+  #icons {
+    text-align: center;
+    margin-bottom: 10px;
+    padding-left: 165px;
+  }
+
+  #links {
+    text-align: center;
+    margin-bottom: 10px;
+    padding-right: 150px;
+  }
+
+  .portfolio-resume {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  margin-top: 100px;
+  }
+
+  #skills-area-portfolio {
+  width: 75%;
+  padding: 45px 10px 25px 31px;
+  background-color: rgb(77, 74, 74);
+  margin: 0;
+  border-radius: 25px;
+  color: whitesmoke;
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
 }
 
