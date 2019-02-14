@@ -138,6 +138,10 @@ strong {
   color: #666;
 }
 
+#first {
+  display: inline;
+}
+
 .container {
   height: 100%;
   padding-bottom: 50px;
